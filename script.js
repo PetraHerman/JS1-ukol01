@@ -6,7 +6,7 @@
 // Pomocí metody slice vyřízněte ze jména i příjmení příslušné části.
 // Pomocí interpolace řetězců sestavte výslednou adresu a vypište ji do stránky.
 
-const jmeno = (prompt("Zadej jméno bez diakritiky:")).trim()
-const prijmeni = (prompt("Zadej příjmení bez diakritiky")).trim()
+const jmeno = ((prompt("Zadej jméno bez diakritiky:")).trim()).toLowerCase()
+const prijmeni = ((prompt("Zadej příjmení bez diakritiky")).trim()).toLowerCase()
 
 document.body.innerHTML += `${prijmeni.slice(0,5)}${jmeno.slice(0,3)}@fit.cvut.cz`
